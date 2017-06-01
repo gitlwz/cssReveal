@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css"/>
+		<style type="text/css">
+			.test1{
+				background: linear-gradient(#fb3 20%,#58a 80%);
+			}
+			.test2{
+				background: linear-gradient(#fb3 50%,#58a 50%);
+			}
+			.test3{
+				background: linear-gradient(#fb3 50%,#58a 50%);
+				background-size: 100% 30px;
+			}
+			/*如果第二个写成0,浏览器默认为前一个色标的值*/
+			.test4{
+				background: linear-gradient(#fb3 50%,#58a 0);
+				background-size: 100% 30px;
+			}
+			.test5{
+				background: linear-gradient(#fb3 25%,#58a 25%,#58a 50%,yellowgreen 50%,yellowgreen 75%,blue 75%);
+				/*background: linear-gradient(
+				#fb3 0%,#fb3 25%,
+				#58a 25%,#58a 50%,
+				yellowgreen 50%,yellowgreen 75%,
+				blue 75%,blue 100%
+				);*/
+				
+				background-size: 100% 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test1"></div>
+		<div class="test2"></div>
+		<div class="test3"></div>
+		<div class="test4"></div>
+		<div class="test5"></div>
+	</body>
+</html>
