@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css" />
+		<style type="text/css">
+			.test1 {
+				padding: 1px;
+				width: 900px;
+				height: 900px;
+			}
+			
+			.test1,
+			.test1>div:nth-of-type(2):before {
+				background: url(../lyf.jpg) 0 /contain fixed;
+			}
+			
+			.test1>div:nth-of-type(1) {
+				background: hsla(0, 0%, 100%, .3);
+				font-size: 16px;
+				margin: 100px auto;
+			}
+			
+			.test1>div:nth-of-type(2) {
+				margin: 50px auto;
+				font-size: 16px;
+				position: relative;
+				z-index: 0;
+				box-shadow: 0px 0px 20px 4px #665555;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+			
+			.test1>div:nth-of-type(2):before {
+				content: '';
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				bottom: -20px;
+				right: -20px;
+				filter: blur(20px);
+				z-index: -1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="test1">
+			<div>
+				When you are old and grey and full of sleep And nodding by the fire，take down this book And slowly read,and dream of the soft look
+			</div>
+			<div>
+				When you are old and grey and full of sleep And nodding by the fire，take down this book And slowly read,and dream of the soft look
+			</div>
+		</div>
+
+	</body>
+
+</html>

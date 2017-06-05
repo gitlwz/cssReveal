@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css"/>
+		<style type="text/css">
+			
+			/*嵌套元素方案*/
+			.test1{
+				background: dodgerblue;
+				transform: skewX(-45deg);
+			}
+			.test1>div{
+				width: 100px;
+				height: 100px;
+				margin: auto;
+				transform: skewX(45deg);
+			}
+			
+			/*伪元素方案*/
+			.test2{
+				position: relative;
+			}
+			.test2:before{
+				content: "";
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+				z-index: -1;
+				background: #58a;
+				transform: skew(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="test1">
+			<div>
+				我是内层元素
+			</div>
+		</div>
+		
+		<div class="test2">
+			我是字体
+		</div>
+	</body>
+</html>

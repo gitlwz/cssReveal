@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css"/>
+		<style type="text/css">
+			/*基本变形方案*/
+			.test1{
+				margin-top: 100px;
+				width: 300px;
+				height: 300px;
+				transform: rotate(45deg);
+				overflow: hidden;
+			}
+			.test1 > img{
+				max-width: 100%;
+				transform: rotate(-45deg) scale(1.42);
+			}
+			/*裁剪路径方案*/
+			.img{
+				clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+				transition: 1s clip-path;
+			}
+			.img:hover{
+				clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test1">
+			<img src="../lyf.jpg"/>
+		</div>
+		
+		<img class="img" src="../gyy.jpg"/>
+	</body>
+</html>

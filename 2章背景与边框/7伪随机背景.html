@@ -5,10 +5,33 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../index.css"/>
 		<style type="text/css">
-			
+			.test1{
+				background: linear-gradient(90deg,
+								#fb3 15%,#655 0,#655 40%,
+								#ab4 0,#ab4 65%,hsl(20,40%,90%) 0);
+				background-size: 80px 100%;
+			}
+			.test2{
+				background: hsl(20,40%,90%);
+				background-image: linear-gradient(90deg,#fb3 10px,transparent 0),
+				                  linear-gradient(90deg,#ab4 20px,transparent 0),
+				                  linear-gradient(90deg,#655 20px,transparent 0);
+				background-size: 80px 100%,60px 100%,40px 100%;
+								  
+			}
+			.test3{
+				background: hsl(20,40%,90%);
+				background-image: linear-gradient(90deg,#fb3 11px,transparent 0),
+				                  linear-gradient(90deg,#ab4 23px,transparent 0),
+				                  linear-gradient(90deg,#655 41px,transparent 0);
+				background-size: 41px 100%,61px 100%,83px 100%;
+								  
+			}
 		</style>
 	</head>
 	<body>
-		<div class="test1"></div>
+		<div class="test1">1</div>
+		<div class="test2">2</div>
+		<div class="test3">3</div>
 	</body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../index.css"/>
+		<style type="text/css">
+			.test1{
+				background: #fb3;
+				width: 200px;
+				height: 200px;
+				border-radius: 100px;   /*正方形边长的一半*/
+			}
+			.test2{
+				background: #fb3;
+				width: 200px;
+				height: 150px;
+				border-radius: 100px / 75px;   /*可以单独指定水平和垂直半径*/
+				
+				
+				/*border-radius: 50%;*/   /*可以得到一个自适应的椭圆了*/
+			}
+			.test3{
+				background: #fb3;
+				border-radius: 50% / 100% 100% 0 0;
+			}
+			.test4{
+				background: #fb3;
+				border-radius: 100% 0 0 100% / 50%;
+			}
+			.test5{
+				background: #fb3;
+				border-radius: 100% 0 0 0 / 50% 0 0 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test1">1</div>
+		<div class="test2">2</div>
+		<div class="test3">3</div>
+		<div class="test4">4</div>
+		<div class="test5">5</div>
+	</body>
+</html>

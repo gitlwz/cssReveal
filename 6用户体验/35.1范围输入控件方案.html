@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.images-slider {
+				position: relative;
+				display: inline-block;
+				font-size: 0px;
+			}
+			
+			.images-slider>div {
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 50%;
+				overflow: hidden;
+			}
+			
+			.input {
+				z-index: 2;
+				position: absolute;
+				left: 0px;
+				bottom: 10px;
+				width: 100%;
+				margin: 0;
+			}
+			
+			.after-img {
+				filter: sepia(1) saturate(1) hue-rotate(295deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="images-slider">
+			<div class="befor-img">
+				<img src="../lyf.jpg" />
+			</div>
+			<img class="after-img" src="../lyf.jpg" alt="" />
+			<input class="input" type="range" />
+		</div>
+		<script type="text/javascript">
+			document.querySelector("input").oninput = function() {
+				document.querySelector(".befor-img").style.width = this.value + '%';
+			}
+		</script>
+	</body>
+
+</html>

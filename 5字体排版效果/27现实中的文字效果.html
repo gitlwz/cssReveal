@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.test1{
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				background:  hsl(210,13%,60%);
+				color: hsl(210,13%,30%);
+			}
+			.test2{
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				background:  hsl(210,13%,60%);
+				color: hsl(210,13%,30%);
+				text-shadow: 0 1px 1px hsla(0,0%,100%,.8);
+			}
+			
+			/*空心字效果*/
+			.test3{
+				font-size: 50px;
+				font-weight: bold;
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				background: deeppink;
+				color: white;
+				text-shadow: 1px 1px black,-1px -1px black,
+							 1px -1px black, -1px 1px black;
+			}
+			
+			/*文字外发光效果*/
+			.test4{
+				font-size: 50px;
+				font-weight: bold;
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				background: #203;
+				color: #ffc;
+				transition: 1s;
+			}
+			.test4:hover{
+				/*text-shadow: 0 0 .1em,0 0 .3em;*/
+				
+				/*or*/
+				
+				filter: blur(.1em);
+				
+			}
+			
+			/*文字凸起效果*/
+			.test5{
+				font-size: 50px;
+				font-weight: bold;
+				margin: 100px auto;
+				width: 200px;
+				height: 200px;
+				background: #58a;
+				color: white;
+				text-shadow: 0 1px hsl(0,0%,85%),
+							 0 2px hsl(0,0%,80%),
+							 0 3px hsl(0,0%,75%),
+							 0 4px hsl(0,0%,70%),
+							 0 5px hsl(0,0%,65%),
+							 0 5px 10px black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test1">
+			and grey and full of sleep And nodding by the fire，take down this book And slowly read,and dream of the soft look	
+		</div>
+		<div class="test2">
+			and grey and full of sleep And nodding by the fire，take down this book And slowly read,and dream of the soft look	
+		</div>
+		<div class="test3">
+			and grey 
+		</div>
+		<div class="test4">
+			and grey 
+		</div>
+		<div class="test5">
+			and grey 
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.images-slider{
+				position: relative;
+				display: inline-block;
+				font-size: 0px;
+				
+			}
+			.images-slider>div{
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 50%;
+				overflow: hidden;
+				resize: horizontal;
+				max-width: 100%;
+			}
+			.images-slider>div::before{
+				position: absolute;
+				content: '';
+				bottom: 0;
+				right: 0;
+				width: 12px;
+				height: 12px;
+				background-color: white;
+				cursor: ew-resize;
+			}
+			.after-img{
+				filter:sepia(1) saturate(1) hue-rotate(295deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="images-slider">
+			<div>
+				<img src="../lyf.jpg"/>
+			</div>
+				<img class="after-img" src="../lyf.jpg" alt="" />
+		</div>
+	</body>
+</html>
